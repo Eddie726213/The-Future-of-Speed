@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Eddie Ulloa</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="main-header">
+  <h1 class="logo-name">Contact</h1>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="biography.html">Biography</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-section">
+  <h2 class="page-heading">Contact</h2>
+
+  <form id="contact-form" action="https://formspree.io/f/xnnkkkzl" method="POST">
+    <label>Name</label>
+    <input type="text" name="name" required>
+    <label>Email</label>
+    <input type="email" name="email" required>
+    <label>Message</label>
+    <textarea name="message" rows="6" required></textarea>
+    <button type="submit" class="btn-primary">Send Message</button>
+  </form>
+</section>
+
+<div id="thankyou-modal" class="modal">
+  <div class="modal-inner">
+    <h3>Thank you</h3>
+    <p>Thank you for your message</p>
+    <button id="modal-close" class="btn-primary">Close</button>
+  </div>
+</div>
+
+<footer><p>© 2025 Eddie Ulloa</p>
+<p>Hosted on Github</p>
+<p>Built with Html, CSS, and JS script</p></footer>
+
+</body>
+</html>
